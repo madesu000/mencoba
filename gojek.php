@@ -32,21 +32,21 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+        echo "\e[93m[!] Trying to redeem Voucher : AYOCOBAGOJEK !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : AYOCOBAGOJEK !\n";
+            echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
             sleep(3);
             goto next;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : BELANJAHEMAT !\n";
                 sleep(3);
                 goto ride;
             }
